@@ -30,41 +30,65 @@ const { y: scroll } = useWindowScroll()
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
+        <span>🫡 不嘻嘻 😂</span>
+
         <RouterLink to="/posts" title="Blog">
           <span class="lt-md:hidden">Blog</span>
-          <div i-ri-article-line md:hidden />
+          <div i-ri-article-line md:hidden style="font-size:1.11rem; margin: 0 -0.125rem;" />
+          <!-- remixicon.com -->
         </RouterLink>
+        <RouterLink to="/media" title="Media">
+          <span class="lt-md:hidden">Media</span>
+          <div i-ri-movie-ai-line md:hidden style="font-size:1.11rem; margin: 0 -0.125rem;" />
+        </RouterLink>
+        <RouterLink to="/photos" title="Photos">
+          <span class="lt-md:hidden">PhotoGrid</span>
+          <div i-ri-camera-3-line md:hidden style="font-size:1.15rem; margin: 0 -0.125rem;" />
+        </RouterLink>
+        <!--
         <RouterLink to="/projects" title="Projects">
           <span class="lt-md:hidden">Projects</span>
           <div i-ri-lightbulb-line class="md:hidden" />
         </RouterLink>
+        -->
+        <!--
         <RouterLink to="/talks" class="lt-md:hidden" title="Talks">
           Talks
         </RouterLink>
+        -->
+        <!--
         <RouterLink to="/sponsors-list" title="Sponsors">
           <span class="lt-md:hidden">Sponsors</span>
           <div i-ri-heart-line class="md:hidden" />
         </RouterLink>
+        -->
+        <!--
         <RouterLink to="/podcasts" class="lt-md:hidden" title="Podcasts">
           <div i-ri-mic-line />
         </RouterLink>
-        <RouterLink to="/photos" title="Photos">
-          <div i-ri-camera-3-line />
-        </RouterLink>
-        <RouterLink to="/demos" title="Demos">
+        -->
+        <!--
+        <RouterLink to="/demos" class="lt-md:hidden" title="Demos">
           <div i-ri-screenshot-line />
         </RouterLink>
-        <!-- <RouterLink to="/chat" title="Let's Chat">
+        -->
+        <!--
+        <RouterLink to="/chat" title="Let's Chat">
           <div i-ri-chat-1-line />
-        </RouterLink> -->
+        </RouterLink>
+        -->
+        <!--
         <a href="https://bsky.app/profile/antfu.me" target="_blank" title="Bluesky" class="lt-md:hidden">
           <div i-ri-bluesky-line />
         </a>
+        -->
+        <!--
         <a href="https://github.com/antfu" target="_blank" title="GitHub" class="lt-md:hidden">
           <div i-uil-github-alt />
         </a>
-        <a href="/feed.xml" target="_blank" title="RSS" class="lt-md:hidden">
-          <div i-la-rss-square style="font-size:1.25rem; margin: 0 -0.125rem;" />
+        -->
+        <a href="/feed.xml" target="_blank" title="RSS">
+          <div i-la-rss-square style="font-size:1.3rem; margin: 0 -0.125rem;" />
         </a>
         <ToggleTheme />
       </div>

@@ -17,19 +17,22 @@ const route = useRoute()
 
     <div mb-0 flex="~ col gap-1 sm:row sm:gap-3 wrap" text-3xl>
       <RouterLink to="/posts" class="!border-none" :class="route.path === '/posts' ? activeStyle : inactiveStyle">
-        Blog
+        Blogs
       </RouterLink>
-      <RouterLink to="/talks" class="!border-none" :class="route.path === '/talks' ? activeStyle : inactiveStyle">
-        Talks
-      </RouterLink>
-      <RouterLink to="/podcasts" class="!border-none" :class="route.path === '/podcasts' ? activeStyle : inactiveStyle">
-        Podcasts
-      </RouterLink>
-      <RouterLink to="/streams" class="!border-none" :class="route.path === '/streams' ? activeStyle : inactiveStyle">
-        Streams
+      <RouterLink to="/bookmarks" class="!border-none" :class="route.path === '/bookmarks' ? activeStyle : inactiveStyle">
+        Bookmarks
       </RouterLink>
       <RouterLink to="/notes" class="!border-none" :class="route.path === '/notes' ? activeStyle : inactiveStyle">
         Notes
+      </RouterLink>
+      <RouterLink to="/podcasts" class="!border-none" :class="route.path === '/podcasts' ? activeStyle : inactiveStyle">
+      <!-- Podcasts -->
+      </RouterLink>
+      <RouterLink to="/streams" class="!border-none" :class="route.path === '/streams' ? activeStyle : inactiveStyle">
+      <!-- Streams -->
+      </RouterLink>
+      <RouterLink to="/talks" class="!border-none" :class="route.path === '/talks' ? activeStyle : inactiveStyle">
+        <!-- Talks -->
       </RouterLink>
     </div>
   </div>

@@ -1,5 +1,5 @@
 ---
-title: Blog - Anthony Fu
+title: Blog - 1PLUS
 display: ''
 art: plum
 ---

@@ -28,8 +28,8 @@ async function buildBlogRSS() {
   const options = {
     title: '1PLUS',
     description: '1PLUS\' Blog',
-    id: 'https://antfu.me/',
-    link: 'https://antfu.me/',
+    id: 'https://1plus.me/',
+    link: 'https://1plus.me/',
     copyright: 'CC BY-NC-SA 4.0 2025 © 1PLUS',
     feedLinks: {
       json: 'https://1PLUS.me/feed.json',

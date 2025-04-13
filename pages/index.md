@@ -28,7 +28,7 @@ When not online, I love hanging out with my camera and do video-editing. Some of
 Find me on
 
 <p flex="~ gap-2 wrap" class="mt--2!">
-  <a href="https://github.com/antfu" target="_blank"><span op75 i-ri-wechat-fill /> WeChat</a>
+  <a href="/images/wechat-qrcode-friend.jpg" target="_blank"><span op75 i-ri-wechat-fill /> WeChat</a>
   <a href="https://t.me/morsou" target="_blank"><span op75 i-ri-telegram-2-fill /> Telegram</a>
   <a href="https://www.instagram.com/oplus114" target="_blank"><span op75 i-simple-icons-instagram /> Instagram</a>
   <a href="https://www.douyin.com/user/self?from_tab_name=main" target="_blank"><span op75 i-ri-tiktok-line /> 抖音</a>

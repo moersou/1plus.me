@@ -71,8 +71,8 @@ async function buildBlogRSS() {
 
 async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
   options.author = AUTHOR
-  options.image = 'https://antfu.me/avatar.png'
-  options.favicon = 'https://antfu.me/logo.png'
+  options.image = 'https://image-host-1313180202.cos.ap-nanjing.myqcloud.com/img/avata-yellow-cat-940x940.jpg?imageSlim'
+  options.favicon = 'https://image-host-1313180202.cos.ap-nanjing.myqcloud.com/img/avata-yellow-cat-512x512.png?imageSlim'
 
   const feed = new Feed(options)
 

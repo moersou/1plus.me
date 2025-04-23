@@ -14,13 +14,43 @@ placeLink:
 inperson:
 ---
 
+<Photosample />
+
 ##
 
 闲云潭影日悠悠，物换星移四度秋。再度醒来，已经是在了机场的巴士上，盼了许久的雨，悄然润湿了跑道，透过玻璃窗，多少人的疲惫摇晃着、倒映在窗外。
 
+<figure pt-0>
+  <div grid="~ cols-2 md:cols-3 gap-1" lg:scale-120 md:scale-110>
+    <img src="/album/p-2025-04-03-15-01-31-088-D.jpg" rounded shadow important-m3 />
+    <img src="/album/p-2025-04-03-15-24-18-096-D.jpg" rounded shadow important-m0 />
+    <img src="/album/p-2025-04-06-06-10-43-102-D.jpg" rounded shadow important-m3 />
+    <img src="/album/p-2025-04-06-06-11-27-104-D.jpg" rounded shadow important-m0 />
+  </div>
+  <figcaption important-mt0 text-center>Examples from <a href="https://qrbtf.com/">QRBTF.com</a></figcaption>
+</figure>
+
 假期周末的最后一天，整夜淅淅沥沥的小雨不知何时停了，昨晚落在身上几滴，很安心。似乎早春的重庆从来都是一个脸色，习惯了这里的天，如果没有雨的味道，会不会睡不着。也许雨来的恰好，候机大厅赶早的人很多，大家都睡着了，约好了不说一句话。
 
+<figure pt-0>
+  <div grid="~ cols-3 md:cols-3 gap-1" lg:scale-120 md:scale-110>
+    <img src="/album/p-2025-04-03-15-01-31-088-D.jpg" rounded shadow important-m8 />
+    <img src="/album/p-2025-04-03-15-24-18-096-D.jpg" rounded shadow important-m4 />
+    <img src="/album/p-2025-04-06-06-10-43-102-D.jpg" rounded shadow important-m0 />
+  </div>
+  <figcaption important-mt0 text-center>Examples from <a href="https://qrbtf.com/">QRBTF.com</a></figcaption>
+</figure>
+
 还记着刚到学校，中午准时吃上了筱园餐厅，三楼的黄焖鸡跟白米饭是一伙的，他俩但凡有一个不合口，我便会怀疑是不是走错了地方。风吹过南岸，春天仿佛只是个借口，球场边的小路上，落叶铺了厚厚一层，踩上去咯吱作响，也许她也分不清了是春是秋。
+
+<figure pt-0>
+  <div grid="~ cols-3 md:cols-3 gap-1" lg:scale-120 md:scale-110>
+    <img src="/album/p-2025-04-03-15-01-31-088-D.jpg" rounded shadow important-m0 />
+    <img src="/album/p-2025-04-03-15-24-18-096-D.jpg" rounded shadow important-m0 />
+    <img src="/album/p-2025-04-06-06-10-43-102-D.jpg" rounded shadow important-m0 />
+  </div>
+  <figcaption important-mt6 text-center>Examples from <a href="https://qrbtf.com/">QRBTF.com</a></figcaption>
+</figure>
 
 而偏偏翠湖的水像是被浸染了，像一盏泡开的砖茶，和落叶一个颜色。若真是秋天，我倒欢喜，那便意味着，又一个夏天被轻轻翻过去了。
 

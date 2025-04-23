@@ -4,6 +4,8 @@ display: Media Consumption
 description: 1PLUS's Media Consumption
 ---
 
+<!--
+
 One's life span is around 29,000 days, or 696,000 hours.
 
 Media consumption is a rather large chunk of my life,
@@ -12,6 +14,10 @@ While we can't live every lifestyle we dream of or experience everything we desi
 media offers us a window into different stories and ways of life.
 
 I wanted to list them out, for myself, for share, or just for the record.
+
+-->
+
+Recording from April 2025
 
 <MediaConsumption />
 

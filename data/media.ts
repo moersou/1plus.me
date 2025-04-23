@@ -35,38 +35,38 @@ export const movie: MediaRecord[] = [
 
 export const anime: MediaRecord[] = [
   {
-    name: '鋼の錬金術師 FULLMETAL ALCHEMIST',
-    creator: '荒川弘',
-    date: '2007',
+    name: 'empty',
+    creator: '',
+    date: '',
   },
 ]
 
 export const book: MediaRecord[] = [
   {
-    name: 'Die with Zero',
-    creator: 'Bill Perkins',
+    name: 'empty',
+    creator: '',
   },
 ]
 
 export const drama: MediaRecord[] = [
   {
-    name: 'グランメゾン東京 La Grande Maison Tokyo',
-    date: '2022',
+    name: 'empty',
+    date: '',
   },
 ]
 
 export const game: MediaRecord[] = [
   {
-    name: 'Factorio',
-    creator: 'Wube Software',
-    date: '2013',
+    name: 'empty',
+    creator: '',
+    date: '',
   },
 ]
 
 export const media: Record<MediaType, MediaRecord[]> = {
   movie,
+  book,
   drama,
   anime,
   game,
-  book,
 }

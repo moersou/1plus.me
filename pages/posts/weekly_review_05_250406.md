@@ -15,7 +15,7 @@ inperson:
 ---
 
 <figure pt-0>
-  <div grid="~ cols-4 md:cols-2 gap-1" lg:scale-100 md:scale-100>
+  <div grid="~ cols-2 md:cols-2 gap-1" lg:scale-100 md:scale-100>
     <img src="/album/p-2025-04-03-15-01-31-088-D.jpg" rounded shadow important-m3 />
     <img src="/album/p-2025-04-03-15-24-18-096-D.jpg" rounded shadow important-m0 />
     <img src="/album/p-2025-04-06-06-10-43-102-D.jpg" rounded shadow important-m3 />

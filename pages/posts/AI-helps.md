@@ -1,5 +1,5 @@
 ---
-title: "关我辟事 Vol.05 | Cursor 是劳保用品"
+title: "Cursor 是劳保用品"
 date: 2025-03-21T13:00:00+08:00
 lang: zh
 type:

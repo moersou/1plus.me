@@ -1,5 +1,5 @@
 ---
-title: "周报 #03 - 利用 follow 重构信息输入模式"
+title: "关我辟事 Vol.03 - 利用 follow 重构信息输入模式"
 date: 2025-03-31T08:03:00+08:00
 lang: zh
 type:

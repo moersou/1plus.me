@@ -1,5 +1,5 @@
 ---
-title: "关我辟事 Vol.01 | 喵了个咪的 | flow"
+title: "喵了个咪的 | flow"
 date: 2025-03-05T08:00:00+08:00
 lang: zh
 type:

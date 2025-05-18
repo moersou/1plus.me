@@ -1,5 +1,5 @@
 ---
-title: "关我辟事 Vol.02 | 听说你也染上 AI 了"
+title: "听说你也染上 AI 了"
 date: 2025-03-07T08:00:00+08:00
 lang: zh
 type:

@@ -30,7 +30,7 @@ const { y: scroll } = useWindowScroll()
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
-        <span>🫡 restart </span>
+        <span>Button 👉</span>
 
         <RouterLink to="/posts" title="Blog">
           <span class="lt-md:hidden">Blog</span>

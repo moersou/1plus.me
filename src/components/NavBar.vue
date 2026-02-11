@@ -30,7 +30,8 @@ const { y: scroll } = useWindowScroll()
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
-        <span>Button 👉</span>
+        <span style="font-size: 2rem;" />
+        <span style="font-size: 1.4rem; vertical-align: middle;">𝟸𝟶𝟸𝟼 🫨</span>
 
         <RouterLink to="/posts" title="Blog">
           <span class="lt-md:hidden">Blog</span>
@@ -43,7 +44,7 @@ const { y: scroll } = useWindowScroll()
         </RouterLink>
         <RouterLink to="/photos" title="Photos">
           <span class="lt-md:hidden">PhotoGrid</span>
-          <div i-ri-camera-3-line md:hidden style="font-size:1.15rem; margin: 0 -0.125rem;" />
+          <div i-ri-camera-3-line md:hidden style="font-size:1.17rem; margin: 0 -0.125rem;" />
         </RouterLink>
         <!--
         <RouterLink to="/projects" title="Projects">

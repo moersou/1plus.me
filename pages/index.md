@@ -1,8 +1,8 @@
 ---
 title: 1PLUS
-subtitle: YJ
+subtitle: Snowflakes are visible under the dark theme
 description: 1PLUS's Portfolio
-art: random
+art: plum
 ---
 
 <PhotoChongQing />
@@ -36,29 +36,7 @@ Find me on
   <!-- <a href="https://x.com/antfuzh" target="_blank"><span op75 i-ri-twitter-x-fill /> 中文推</a> -->
 </p>
 
-Or mail me at <span font-mono>zhaoyijia2018<span i-carbon-at/>gmail.com</span>
-
 Or mail me at [`zhaoyijia2018@gmail.com`](mailto:zhaoyijia2018@gmail.com)
-
-<a href="mailto:zhaoyijia2018@gmail.com"
-   target="_blank"
-   flex="~ inline gap-1 items-center"
-   class="font-mono hover:text-blue-500 transition-colors">
-<span i-carbon-email op75 />
-<span>zhaoyijia2018@gmail.com</span>
-</a>
-
-<p class="mt-4">
-  Or mail me at
-  <br/>
-  <a href="mailto:zhaoyijia2018@gmail.com"
-     target="_blank"
-     flex="~ inline gap-1 items-center"
-     class="font-mono hover:text-blue-600 dark:hover:text-blue-400 transition-colors border-b border-dashed border-gray-400 hover:border-blue-500">
-    <span i-carbon-email op75 />
-    <span>zhaoyijia2018@gmail.com</span>
-  </a>
-</p>
 
 Inactive on
 <span flex="~ inline gap-2 wrap">

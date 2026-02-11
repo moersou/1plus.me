@@ -1,5 +1,6 @@
 ---
 title: 1PLUS
+subtitle: YJ
 description: 1PLUS's Portfolio
 art: random
 ---
@@ -30,16 +31,43 @@ Find me on
 <p flex="~ gap-2 wrap" class="mt--2!">
   <a href="/images/wechat-qrcode-friend.jpg" target="_blank"><span op75 i-ri-wechat-fill /> WeChat</a>
   <a href="https://t.me/moersou" target="_blank"><span op75 i-ri-telegram-2-fill /> Telegram</a>
+  <a href="https://w.app/euqkt0" target="_blank"><span op75 i-ri-whatsapp-fill /> WhatsApp</a>
   <a href="https://www.instagram.com/oplus114" target="_blank"><span op75 i-simple-icons-instagram /> Instagram</a>
-  <a href="https://www.douyin.com/user/self?from_tab_name=main" target="_blank"><span op75 i-ri-tiktok-line /> 抖音</a>
-  <a href="https://space.bilibili.com/39372592" target="_blank"><span op75 i-simple-icons-bilibili /> 哔哩哔哩</a>
   <!-- <a href="https://x.com/antfuzh" target="_blank"><span op75 i-ri-twitter-x-fill /> 中文推</a> -->
 </p>
 
 Or mail me at <span font-mono>zhaoyijia2018<span i-carbon-at/>gmail.com</span>
 
-Inactive on <span flex="~ inline gap-2 wrap"><a href="https://mastodon.social/@1PLUS" target="_blank"><span op75 i-simple-icons-mastodon/> Mastodon</a> <a href="https://bsky.app/profile/1plusm.bsky.social" target="_blank"><span op75 i-ri-bluesky-fill /> Bluesky</a>
-<a href="https://www.threads.net/@oplus114" target="_blank"><span op75 i-ri-threads-line /> Threads</a></span>
+Or mail me at [`zhaoyijia2018@gmail.com`](mailto:zhaoyijia2018@gmail.com)
+
+<a href="mailto:zhaoyijia2018@gmail.com"
+   target="_blank"
+   flex="~ inline gap-1 items-center"
+   class="font-mono hover:text-blue-500 transition-colors">
+<span i-carbon-email op75 />
+<span>zhaoyijia2018@gmail.com</span>
+</a>
+
+<p class="mt-4">
+  Or mail me at
+  <br/>
+  <a href="mailto:zhaoyijia2018@gmail.com"
+     target="_blank"
+     flex="~ inline gap-1 items-center"
+     class="font-mono hover:text-blue-600 dark:hover:text-blue-400 transition-colors border-b border-dashed border-gray-400 hover:border-blue-500">
+    <span i-carbon-email op75 />
+    <span>zhaoyijia2018@gmail.com</span>
+  </a>
+</p>
+
+Inactive on
+<span flex="~ inline gap-2 wrap">
+<a href="https://mastodon.social/@1PLUS" target="_blank"><span op75 i-simple-icons-mastodon/> Mastodon</a>
+<a href="https://bsky.app/profile/1plusm.bsky.social" target="_blank"><span op75 i-ri-bluesky-fill /> Bluesky</a>
+<a href="https://www.threads.net/@oplus114" target="_blank"><span op75 i-ri-threads-line /> Threads</a>
+<a href="https://www.douyin.com/user/self?from_tab_name=main" target="_blank"><span op75 i-ri-tiktok-fill /> 抖音</a>
+<a href="https://space.bilibili.com/39372592" target="_blank"><span op75 i-simple-icons-bilibili /> BiliBili</a>
+</span>
 
 ---
 

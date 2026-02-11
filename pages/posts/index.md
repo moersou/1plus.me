@@ -1,7 +1,7 @@
 ---
 title: Blog - 1PLUS
 display: ''
-art: plum
+art: dots
 ---
 
 <SubNav />

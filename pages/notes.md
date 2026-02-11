@@ -1,6 +1,6 @@
 ---
 title: Notes - 1PLUS
-art: plum
+art: dots
 display: ''
 ---
 

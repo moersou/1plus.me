@@ -2,6 +2,7 @@
 title: Media Consumption - 1PLUS
 display: Media Consumption
 description: 1PLUS's Media Consumption
+art: dots
 ---
 
 <!--

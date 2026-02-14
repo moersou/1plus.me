@@ -7,10 +7,12 @@ art: random
 
 <!-- @layout-full-width -->
 
-<PhotoGalleryAll mt--10 />
-
-<div class="prose mx-auto mt-5">
+<div class="prose mx-auto mt--10">
   <div>
-    <em op50>Thank you for being interested in my photos.</em>
+    <em op50>Shot by DJI osmo & Sony</em>
+    <br/>
+    <em op50>Thank you for being interested in my photos</em>
   </div>
 </div>
+
+<PhotoGalleryAll mt-5 />

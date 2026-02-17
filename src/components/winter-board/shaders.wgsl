@@ -110,14 +110,25 @@ fn particleFragment(in : QuadVertexOutput) -> @location(0) vec4f {
     discard;
   }
 
-  // Snowflake SDF with soft edges
+  // 1. 计算雪花形状（保持你原有的逻辑）
   let snowDist = sdSnowflake(in.uv.xy);
   let edgeSoftness = 0.06 / in.distance;
   let alpha = 1.0 - smoothstep(-edgeSoftness, edgeSoftness * 2.0, snowDist);
 
-  let brightness = alpha * in.opacity;
-  // Note: we must return a premultiplied pixel.
-  return vec4f(brightness);
+  // 2. 这里的 finalAlpha 结合了形状 alpha 和粒子自身的 opacity 属性
+  let finalAlpha = alpha * in.opacity;
+
+  // 3. 定义你想要的颜色
+  let farColor = vec3f(0.9, 1.0, 1.0);  // 远处的深蓝色
+  let nearColor = vec3f(0.3, 0.1, 0.3); // 近处的纯白色
+  
+  // 4. 根据距离进行颜色插值 (假设 distance 范围是 1.0 到 10.0)
+  let depthFactor = clamp((in.distance - 1.0) / 9.0, 0.0, 1.0);
+  let finalRGB = mix(nearColor, farColor, depthFactor);
+
+  // 5. 返回预乘透明度结果
+  // 重要：WebGPU 渲染透明物体通常需要这种 RGB * Alpha 的格式
+  return vec4f(finalRGB * finalAlpha, finalAlpha);
 }
 
 struct Pcg32RandomState {

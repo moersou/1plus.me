@@ -1,6 +1,6 @@
 ---
 title: 1PLUS
-subtitle: Snowflakes are visible under the dark theme
+subtitle:
 description: 1PLUS's Portfolio
 art: plum
 ---

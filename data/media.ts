@@ -88,9 +88,9 @@ export const drama: MediaRecord[] = [
 
 export const game: MediaRecord[] = [
   {
-    name: 'empty',
-    creator: '',
-    date: '',
+    name: 'Hollow Knight: Silksong',
+    creator: 'Team Cherry',
+    date: '2025',
   },
 ]
 

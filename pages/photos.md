@@ -7,7 +7,7 @@ art: random
 
 <!-- @layout-full-width -->
 
-<div class="prose mx-auto mt--10">
+<div class="prose mt--10 text-left">
   <div>
     <em op50>Filmed by DJI osmo & Sony</em>
     <br/>

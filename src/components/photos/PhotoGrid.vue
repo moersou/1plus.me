@@ -14,7 +14,7 @@ defineProps<{
         :alt="photo.text || photo.name"
         :data-photo-index="idx"
         loading="lazy"
-        class="w-full h-auto object-contain rounded-xl shadow-md"
+        class="w-full aspect-square h-auto object-cover rounded-xl shadow-md"
       >
     </div>
   </div>

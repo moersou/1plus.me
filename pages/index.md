@@ -5,7 +5,7 @@ description: 1PLUS's Portfolio
 art: plum
 ---
 
-<PhotoEnd2025 />
+<Photo202601 />
 
 <!--
 Working at {NuxtLabs}<br>
@@ -20,7 +20,9 @@ Occasionally, I also do coding live streams on [YouTube](https://www.youtube.com
 From time to time, I also make some generative-art, interactivity experiments on [100.antfu.me](https://100.antfu.me/).
 -->
 
-When not online, I love hanging out with my camera and do video-editing. Some of my photos can be found on [this page](/photos). I also love movies and dramas, my media consumption can be found [here](/media). I live in Shijiazhuang now, if you are around, please reach me out let’s have some coffee or fun together.
+When I'm offline, I love wandering around with my camera and editing videos. Some of my photos can be found on [this page](/photos). I’m also a fan of Taiwanese film. Explore my [watchlist](/media) (Since April 2025) and see what I’ve been watching.
+
+Currently based in Shijiazhuang, feel free to reach out for coffee or a chat.
 
 <div flex-auto />
 
@@ -41,9 +43,8 @@ Or mail me at [`zhaoyijia2018@gmail.com`](mailto:zhaoyijia2018@gmail.com)
 Inactive on
 <span flex="~ inline gap-2 wrap">
 <a href="https://mastodon.social/@1PLUS" target="_blank"><span op75 i-simple-icons-mastodon/> Mastodon</a>
-<a href="https://bsky.app/profile/1plusm.bsky.social" target="_blank"><span op75 i-ri-bluesky-fill /> Bluesky</a>
 <a href="https://www.threads.net/@oplus114" target="_blank"><span op75 i-ri-threads-line /> Threads</a>
-<a href="https://www.douyin.com/user/self?from_tab_name=main" target="_blank"><span op75 i-ri-tiktok-fill /> 抖音</a>
+<a href="https://www.douyin.com/user/self?from_tab_name=main" target="_blank"><span op75 i-ri-tiktok-fill /> TikTok</a>
 <a href="https://space.bilibili.com/39372592" target="_blank"><span op75 i-simple-icons-bilibili /> BiliBili</a>
 </span>
 

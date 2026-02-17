@@ -12,6 +12,36 @@ export interface MediaRecord {
 
 export const movie: MediaRecord[] = [
   {
+    name: '卢旺达饭店',
+    creator: 'Terry George',
+    date: '2004',
+  },
+  {
+    name: '孟买酒店',
+    creator: 'Anthony Maras',
+    date: '2018',
+  },
+  {
+    name: '一一',
+    creator: '杨德昌',
+    date: '2000',
+  },
+  {
+    name: '阳光普照',
+    creator: '钟孟宏',
+    date: '2019',
+  },
+  {
+    name: '大佛普拉斯',
+    creator: '黄信尧',
+    date: '2017',
+  },
+  {
+    name: '鬼灭之刃 Infinity Castle',
+    creator: '近藤光と外崎春雄',
+    date: '2025',
+  },
+  {
     name: '首尔之春',
     creator: '金成洙',
     date: '2023',
@@ -43,15 +73,16 @@ export const anime: MediaRecord[] = [
 
 export const book: MediaRecord[] = [
   {
-    name: 'empty',
-    creator: '',
+    name: '额尔古纳河右岸',
+    creator: '迟子建',
   },
 ]
 
 export const drama: MediaRecord[] = [
   {
-    name: 'empty',
-    date: '',
+    name: '人民的名义',
+    creator: '李路',
+    date: '2017',
   },
 ]
 

@@ -1,6 +1,6 @@
 ---
-title: Media Consumption - 1PLUS
-display: Media Consumption
+title: Watchlist - 1PLUS
+display: Watchlist
 description: 1PLUS's Media Consumption
 art: dots
 ---

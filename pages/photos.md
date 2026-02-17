@@ -9,7 +9,7 @@ art: random
 
 <div class="prose mx-auto mt--10">
   <div>
-    <em op50>Shot by DJI osmo & Sony</em>
+    <em op50>Filmed by DJI osmo & Sony</em>
     <br/>
     <em op50>Thank you for being interested in my photos</em>
   </div>

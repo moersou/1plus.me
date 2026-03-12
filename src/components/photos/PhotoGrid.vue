@@ -58,13 +58,13 @@ defineProps<{
   <div class="max-w-500 mx-auto">
     <div v-if="photos.length > 0" class="mb-5">
       <img
-        :src="photos[0].url"
+        :src="photos[6].url"
         class="w-full h-[45vh] md:h-[65vh] object-cover rounded-2xl shadow-lg"
         alt="Hero Image"
       >
       <div class="op60 mt-3 text-left px-1">
         <h1 class="text-xl font-bold">
-          {{ photos[0].text || photos[0].name }}
+          {{ photos[6].text || photos[6].name }}
         </h1>
         <p class="op50 mt-0 text-sm" />
       </div>
@@ -72,7 +72,7 @@ defineProps<{
 
     <div class="masonry-container">
       <div
-        v-for="(photo, idx) in photos.filter((_, i) => i !== 0)"
+        v-for="(photo, idx) in photos.filter((_, i) => i !== 6)"
         :key="idx"
         class="masonry-item group"
       >

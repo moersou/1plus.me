@@ -11,7 +11,7 @@ art: random
   <div>
     <em op50>Filmed by DJI osmo & Sony</em>
     <br/>
-    <em op50>Thank you for being interested in my photos</em>
+    <em op50></em>
   </div>
 </div>
 

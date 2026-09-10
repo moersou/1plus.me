@@ -52,7 +52,7 @@ async function setup() {
     return
   const app = new Application()
   await app.init({
-    background: '#ffffff',
+    background: '#f7f3ea',
     antialias: true,
     resolution: window.devicePixelRatio,
     resizeTo: el.value,

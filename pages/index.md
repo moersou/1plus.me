@@ -32,13 +32,13 @@ Find me on
 
 <p flex="~ gap-2 wrap" class="mt--2!">
   <a href="/images/wechat-qrcode-friend.jpg" target="_blank"><span op75 i-ri-wechat-fill /> WeChat</a>
-  <a href="https://t.me/moersou" target="_blank"><span op75 i-ri-telegram-2-fill /> Telegram</a>
-  <a href="https://w.app/euqkt0" target="_blank"><span op75 i-ri-whatsapp-fill /> WhatsApp</a>
+  <a href="https://t.me/neilzee" target="_blank"><span op75 i-ri-telegram-2-fill /> Telegram</a>
+  <a href="https://wa.me/447566770755?text=hey%20there" target="_blank"><span op75 i-ri-whatsapp-fill /> WhatsApp</a>
   <a href="https://www.instagram.com/oplus114" target="_blank"><span op75 i-simple-icons-instagram /> Instagram</a>
-  <!-- <a href="https://x.com/antfuzh" target="_blank"><span op75 i-ri-twitter-x-fill /> 中文推</a> -->
+  <a href="https://x.com/moersou" target="_blank"><span op75 i-ri-twitter-x-fill /> Twitter</a>
 </p>
 
-Or mail me at [`zhaoyijia2018@gmail.com`](mailto:zhaoyijia2018@gmail.com)
+Or mail me at [`helloneilzee@gmail.com`](mailto:helloneilzee@gmail.com)
 
 Inactive on
 <span flex="~ inline gap-2 wrap">

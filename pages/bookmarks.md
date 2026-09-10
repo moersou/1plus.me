@@ -7,15 +7,14 @@ art: dots
 
 <SubNav />
 
-### LLMS
+### Shortcut
 
-- [Gemini](https://gemini.google.com/)
-- [Gork](https://grok.com/)
+- [Squoosh](https://squoosh.app/)
+- [TH](https://xn--rss276g.net/)
 
 ### Media
 
 - [NeoDB](https://neodb.social/discover/)
-- [Mastodon](https://mastodon.social/explore)
 
 ### Design
 

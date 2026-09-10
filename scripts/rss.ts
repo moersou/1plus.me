@@ -30,11 +30,11 @@ async function buildBlogRSS() {
     description: '1PLUS\' Blog',
     id: 'https://1plus.me/',
     link: 'https://1plus.me/',
-    copyright: 'CC BY-NC-SA 4.0 2025 © 1PLUS',
+    copyright: 'CC BY-NC-SA 4.0 2026 © 1PLUS',
     feedLinks: {
-      json: 'https://1PLUS.me/feed.json',
-      atom: 'https://1PLUS.me/feed.atom',
-      rss: 'https://1PLUS.me/feed.xml',
+      json: 'https://1plus.me/feed.json',
+      atom: 'https://1plus.me/feed.atom',
+      rss: 'https://1plus.me/feed.xml',
     },
   }
   const posts: any[] = (

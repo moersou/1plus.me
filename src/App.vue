@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Snow from './components/Snow.vue'
 import WinterBoard from './components/winter-board/WinterBoard.vue'
 
 const route = useRoute()
@@ -76,6 +77,7 @@ onKeyStroke('Escape', (e) => {
 </script>
 
 <template>
+  <Snow />
   <WinterBoard />
   <NavBar />
   <main class="px-7 py-10 of-x-hidden">

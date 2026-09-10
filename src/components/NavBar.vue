@@ -31,7 +31,10 @@ const { y: scroll } = useWindowScroll()
       <div class="spacer" />
       <div class="right" print:op0>
         <span style="font-size: 2rem;" />
-        <span style="font-size: 1.4rem; vertical-align: middle;">𝟸𝟶𝟸𝟼 🫨</span>
+        <span class="year-easter-egg">
+          <span class="year-default">𝟸𝟶𝟸𝟼 🫨</span>
+          <span class="year-hover">𝟸𝟶𝟸𝟽 👀</span>
+        </span>
 
         <RouterLink to="/posts" title="Blog">
           <span class="lt-md:hidden">Blog</span>
@@ -146,5 +149,60 @@ const { y: scroll } = useWindowScroll()
 
 .nav .right > * {
   margin: auto;
+}
+
+/* Navbar 年份彩蛋动画：2026 🫨 → 2027 👀 */
+.year-easter-egg {
+  position: relative;
+  display: inline-block;
+  min-width: 5.8rem;
+  font-size: 1.4rem;
+  vertical-align: middle;
+  cursor: default;
+}
+
+.year-default,
+.year-hover {
+  display: inline-block;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.year-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.year-easter-egg:hover .year-default {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+.year-easter-egg:hover .year-hover {
+  opacity: 1;
+  transform: translateY(0);
+  animation: peek 0.4s ease;
+}
+
+@keyframes peek {
+  0% {
+    transform: translateY(6px) rotate(0deg);
+  }
+
+  40% {
+    transform: translateY(0) rotate(-5deg);
+  }
+
+  70% {
+    transform: translateY(0) rotate(5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
 }
 </style>

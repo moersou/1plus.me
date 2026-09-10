@@ -1,5 +1,5 @@
 ---
-title: "周报 #107 - 基于 Multica 与 Impeccable 的开发/设计工作流"
+title: "周报 #108 - 基于 Mul"
 date: 2026-04-19T23:15:00.000+0800
 lang: zh
 duration: 8min

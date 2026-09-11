@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import MusicPlayer from './components/MusicPlayer.vue'
 import Snow from './components/Snow.vue'
 import WinterBoard from './components/winter-board/WinterBoard.vue'
 
@@ -77,6 +78,7 @@ onKeyStroke('Escape', (e) => {
 </script>
 
 <template>
+  <MusicPlayer />
   <Snow />
   <WinterBoard />
   <NavBar />

@@ -1,4 +1,27 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
+const yearText = ref('别点我 🫨')
+
+const easterEggs = [
+  '烦死了😠',
+  '你再点？？',
+  '真服了😮‍💨',
+  '警告你.exe',
+  '有病吧！！',
+  '我怒了💩',
+  '击毙你☠️',
+]
+
+function randomizeYearText() {
+  const random = easterEggs[Math.floor(Math.random() * easterEggs.length)]
+  yearText.value = random
+}
+
+function resetYearText() {
+  yearText.value = '别点我 🫨'
+}
+
 function toTop() {
   window.scrollTo({
     top: 0,
@@ -31,9 +54,13 @@ const { y: scroll } = useWindowScroll()
       <div class="spacer" />
       <div class="right" print:op0>
         <span style="font-size: 2rem;" />
-        <span class="year-easter-egg">
-          <span class="year-default">𝟸𝟶𝟸𝟼 🫨</span>
-          <span class="year-hover">𝟸𝟶𝟸𝟽 👀</span>
+        <span
+          class="year-easter-egg"
+          @mouseenter="randomizeYearText"
+          @mouseleave="resetYearText"
+          @click="randomizeYearText"
+        >
+          {{ yearText }}
         </span>
 
         <RouterLink to="/posts" title="Blog">
@@ -151,58 +178,43 @@ const { y: scroll } = useWindowScroll()
   margin: auto;
 }
 
-/* Navbar 年份彩蛋动画：2026 🫨 → 2027 👀 */
+/* 年份彩蛋向右靠近 Blog */
+.nav .right > .year-easter-egg {
+  margin-right: -1.7rem;
+}
+
+/* Navbar 年份随机彩蛋 */
 .year-easter-egg {
-  position: relative;
   display: inline-block;
   min-width: 5.8rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   vertical-align: middle;
   cursor: default;
 }
 
-.year-default,
-.year-hover {
-  display: inline-block;
-  transition:
-    opacity 0.25s ease,
-    transform 0.25s ease;
-}
-
-.year-hover {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transform: translateY(6px);
-}
-
-.year-easter-egg:hover .year-default {
-  opacity: 0;
-  transform: translateY(-6px);
-}
-
-.year-easter-egg:hover .year-hover {
-  opacity: 1;
-  transform: translateY(0);
+.year-easter-egg:hover {
   animation: peek 0.4s ease;
 }
 
 @keyframes peek {
   0% {
-    transform: translateY(6px) rotate(0deg);
+    transform: translateY(4px) translateX(0) rotate(0deg);
   }
 
-  40% {
-    transform: translateY(0) rotate(-5deg);
+  25% {
+    transform: translateY(0) translateX(-2px) rotate(-7deg);
   }
 
-  70% {
-    transform: translateY(0) rotate(5deg);
+  50% {
+    transform: translateY(0) translateX(2px) rotate(7deg);
+  }
+
+  75% {
+    transform: translateY(0) translateX(-1px) rotate(-4deg);
   }
 
   100% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0) translateX(0) rotate(0deg);
   }
 }
 </style>

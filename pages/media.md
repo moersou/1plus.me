@@ -2,7 +2,7 @@
 title: Watchlist - 1PLUS
 display: Watchlist
 description: 1PLUS's Media Consumption
-art: dots
+art: mesh
 ---
 
 <!--

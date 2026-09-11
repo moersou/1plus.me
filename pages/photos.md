@@ -2,7 +2,7 @@
 title: Photos - 1PLUS
 description: Photos by 1PLUS
 display: ''
-art: random
+art: mesh
 ---
 
 <!-- @layout-full-width -->

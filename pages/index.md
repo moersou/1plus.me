@@ -2,7 +2,7 @@
 title: Neil Zee
 subtitle:
 description: 1PLUS's Portfolio
-art: plum
+art: mesh
 ---
 
 <Photo202601 />

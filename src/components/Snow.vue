@@ -14,7 +14,10 @@ onMounted(() => {
   if (!ctx)
     return
 
-  const flakes = Array.from({ length: 100 }, () => ({
+  const canvasEl = canvas
+  const context = ctx
+
+  const flakes = Array.from({ length: 30 }, () => ({
     x: Math.random() * window.innerWidth,
     y: Math.random() * window.innerHeight,
     r: Math.random() * 2 + 1,
@@ -23,37 +26,37 @@ onMounted(() => {
   }))
 
   function resize() {
-    canvas.width = window.innerWidth
-    canvas.height = window.innerHeight
+    canvasEl.width = window.innerWidth
+    canvasEl.height = window.innerHeight
   }
 
   function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    context.clearRect(0, 0, canvasEl.width, canvasEl.height)
 
     const isDark = document.documentElement.classList.contains('dark')
 
-    ctx.fillStyle = isDark
+    context.fillStyle = isDark
       ? 'rgba(255, 255, 255, 0.75)'
       : 'rgba(90, 110, 130, 0.35)'
 
     for (const flake of flakes) {
-      ctx.beginPath()
-      ctx.arc(flake.x, flake.y, flake.r, 0, Math.PI * 2)
-      ctx.fill()
+      context.beginPath()
+      context.arc(flake.x, flake.y, flake.r, 0, Math.PI * 2)
+      context.fill()
 
       flake.y += flake.speed
       flake.x += flake.drift
 
-      if (flake.y > canvas.height) {
+      if (flake.y > canvasEl.height) {
         flake.y = -5
-        flake.x = Math.random() * canvas.width
+        flake.x = Math.random() * canvasEl.width
       }
 
-      if (flake.x > canvas.width)
+      if (flake.x > canvasEl.width)
         flake.x = 0
 
       if (flake.x < 0)
-        flake.x = canvas.width
+        flake.x = canvasEl.width
     }
 
     animationId = requestAnimationFrame(draw)

@@ -22,7 +22,8 @@ From time to time, I also make some generative-art, interactivity experiments on
 
 When I'm offline, I love wandering around with my camera and editing videos. Some of my photos can be found on [this page](/photos). I’m also a fan of Taiwanese film. Explore my [watchlist](/media) (Since April 2025) and see what I’ve been watching.
 
-Currently based in Shijiazhuang, feel free to reach out for coffee or a chat.
+A year went by fast. I still remember working on this site last year like it was yesterday.
+Currently based in Shijiazhuang, always up to reach out for coffee or a chat.
 
 <div flex-auto />
 

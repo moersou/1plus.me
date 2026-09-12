@@ -100,6 +100,7 @@ const ArtComponent = computed(() => {
     class="prose m-auto mb-8"
     :lang="frontmatter.lang"
     :class="[frontmatter.wrapperClass]"
+    :style="route.path === '/' ? { marginBottom: '8px' } : undefined"
   >
     <h1 class="mb-0 slide-enter-50">
       {{ frontmatter.display ?? frontmatter.title }}

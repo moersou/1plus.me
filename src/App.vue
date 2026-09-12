@@ -82,7 +82,10 @@ onKeyStroke('Escape', (e) => {
   <Snow />
   <WinterBoard />
   <NavBar />
-  <main class="px-7 py-10 of-x-hidden">
+  <main
+    class="px-7 py-10 of-x-hidden"
+    :style="route.path === '/' ? { paddingTop: '15px' } : undefined"
+  >
     <RouterView />
     <Footer :key="route.path" />
   </main>

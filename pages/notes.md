@@ -1,6 +1,6 @@
 ---
 title: Notes - 1PLUS
-art: dots
+art: mesh
 display: ''
 ---
 

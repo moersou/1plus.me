@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 
 // ===== 歌单：保留你自己的歌名和路径 =====
 const tracks = [
@@ -288,7 +288,41 @@ function onKeydown(event: KeyboardEvent) {
     expanded.value = false
 }
 
+// ===== 首页近况贴纸与播放器联动（只允许播放现有歌单） =====
+function publishMusicState() {
+  if (typeof window === 'undefined')
+    return
+  window.dispatchEvent(new CustomEvent('neil:music-state', {
+    detail: {
+      src: track.value.src,
+      playing: playing.value,
+      loading: loading.value,
+      error: error.value,
+    },
+  }))
+}
+
+function onMusicToggle(event: Event) {
+  const src = (event as CustomEvent<{ src?: string }>).detail?.src
+  const target = tracks.findIndex(item => item.src === src)
+  if (target < 0) {
+    window.dispatchEvent(new CustomEvent('neil:music-state', {
+      detail: { src, playing: false, loading: false, error: '这首歌还没加入播放器歌单。' },
+    }))
+    return
+  }
+  if (target === index.value)
+    toggle()
+  else
+    selectTrack(target)
+  publishMusicState()
+}
+
+watch([index, playing, loading, error], publishMusicState, { flush: 'sync' })
+
 onMounted(() => {
+  window.addEventListener('neil:music-toggle', onMusicToggle)
+  window.addEventListener('neil:music-query', publishMusicState)
   viewport.value = {
     width: window.innerWidth,
     height: window.innerHeight,
@@ -324,6 +358,8 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
+  window.removeEventListener('neil:music-toggle', onMusicToggle)
+  window.removeEventListener('neil:music-query', publishMusicState)
   pause()
   window.removeEventListener('resize', resize)
   document.removeEventListener('keydown', onKeydown)

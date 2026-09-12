@@ -5,7 +5,6 @@ import { computed, onMounted, onUnmounted, ref } from 'vue'
 const tracks = [
   { title: '灿', src: '/music/旧北乐队 - 灿.mp3' },
   { title: 'We Are the World', src: '/music/The Columbia River Players - We Are the World.mp3' },
-  { title: '道别是一件难事', src: '/music/上海彩虹室内合唱团 - 道别是一件难事.mp3' },
 ]
 
 const audio = ref<HTMLAudioElement | null>(null)
@@ -757,5 +756,33 @@ html.dark .nz-music-player {
 .nz-music-player .nz-progress-ring {
   display: block;
   max-width: none;
+}
+/* 浅色模式：陶土色按钮、奶油色图标 */
+.nz-music-player .nz-play-orb {
+  background: #925b43;
+  color: #fff4e7 !important;
+  box-shadow: 0 3px 12px #925b4330;
+}
+
+/* 深色模式：浅赤陶色按钮、深棕色图标 */
+html.dark .nz-music-player .nz-play-orb {
+  background: #d6a58a;
+  color: #352219 !important;
+  box-shadow: 0 3px 14px #d6a58a26;
+}
+
+/* 加粗进度环，使用按钮内的对比色 */
+.nz-music-player .nz-progress-ring circle {
+  stroke-width: 3;
+}
+
+.nz-music-player .nz-ring-track {
+  stroke: currentColor;
+  opacity: 0.2;
+}
+
+.nz-music-player .nz-ring-value {
+  stroke: currentColor;
+  opacity: 1;
 }
 </style>

@@ -1023,4 +1023,52 @@ html.dark .neil-now {
     margin-top: 0;
   }
 }
+
+/* 仅手机双列布局 */
+@media (min-width: 360px) and (max-width: 600px) {
+  .neil-now .nn-sticker.nn-film,
+  .neil-now .nn-sticker.nn-music {
+    align-self: stretch;
+    min-height: 0;
+    margin-top: 0;
+  }
+
+  /* 为较小的手机耳机保留足够空间 */
+  .neil-now .nn-sticker.nn-music {
+    padding-top: 56px;
+    padding-bottom: 12px;
+  }
+
+  .neil-now .nn-music .nn-eyebrow {
+    margin-bottom: 8px;
+  }
+
+  .neil-now .nn-music .nn-music-title {
+    font-size: 20px;
+    line-height: 1.1;
+    margin: 0 0 6px;
+  }
+
+  .neil-now .nn-music .nn-meta {
+    line-height: 1.3;
+  }
+
+  .neil-now .nn-music .nn-music-beat {
+    height: 12px;
+    margin-top: 8px;
+  }
+
+  .neil-now .nn-music .nn-bottom {
+    padding-top: 8px;
+  }
+
+  /* 票根贴住底部，保持虚线与半圆缺口对齐 */
+  .neil-now .nn-film .nn-bottom {
+    margin-top: auto;
+  }
+
+  .neil-now .nn-film .nn-flip {
+    margin-bottom: 6px;
+  }
+}
 </style>

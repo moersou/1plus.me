@@ -225,8 +225,10 @@ onUnmounted(() => {
         <span class="nn-music-title">{{ now.music.title }}</span>
         <span class="nn-meta">{{ now.music.artist }}</span>
 
-        <!-- 仅播放时出现的小节拍 -->
+        <!-- 7 根音柱：复用已有的播放状态 -->
         <span class="nn-music-beat" aria-hidden="true">
+          <span />
+          <span />
           <span />
           <span />
           <span />
@@ -1069,6 +1071,154 @@ html.dark .neil-now {
 
   .neil-now .nn-film .nn-flip {
     margin-bottom: 6px;
+  }
+}
+
+/* 仅宽屏三列布局 */
+@media (min-width: 601px) {
+  .neil-now .nn-sticker.nn-music {
+    /* 底部留出 16px，让本体不再填满整行 */
+    margin-bottom: 16px;
+    padding-top: 58px;
+    padding-bottom: 12px;
+  }
+
+  .neil-now .nn-sticker.nn-note {
+    /* 从之前的 220px 调回 240px */
+    min-height: 240px;
+    align-self: center;
+    margin-top: 0;
+  }
+}
+
+/* 音柱沿用原来的占位高度，不撑高卡片 */
+.neil-now .nn-music .nn-music-beat {
+  justify-content: center;
+  gap: 5px;
+  overflow: visible;
+  opacity: 1;
+}
+
+/* 暂停：收成一排短条 */
+.neil-now .nn-music .nn-music-beat > span {
+  flex: 0 0 6px;
+  width: 6px;
+  height: 28px;
+  border-radius: 999px;
+  background: #fff3df;
+  transform-origin: center;
+  transform: scaleY(0.14);
+  opacity: 0.45;
+  animation: none;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+/*
+ * 动画始终保留，暂停时冻结内部节奏；
+ * 外层通过 scale 平滑收拢，避免突然跳成短条。
+ */
+.neil-now .nn-music .nn-music-beat > span::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: #fff3df;
+  animation: nn-equalizer-dance var(--nn-speed, 1s) ease-in-out var(--nn-delay, 0s) infinite;
+  animation-play-state: paused;
+}
+
+/* 底色交给内部音柱绘制 */
+.neil-now .nn-music .nn-music-beat > span {
+  background: transparent;
+}
+
+.neil-now .nn-music.nn-is-playing .nn-music-beat > span {
+  animation: none;
+  transform: scaleY(1);
+  opacity: 0.9;
+}
+
+.neil-now .nn-music.nn-is-playing .nn-music-beat > span::before {
+  animation-play-state: running;
+}
+
+/* 各柱节奏错开，不会整排同步上下跳 */
+.neil-now .nn-music-beat > span:nth-child(1) {
+  --nn-speed: 1.1s;
+  --nn-delay: -0.3s;
+  --nn-peak: 0.6;
+}
+.neil-now .nn-music-beat > span:nth-child(2) {
+  --nn-speed: 0.85s;
+  --nn-delay: -0.6s;
+  --nn-peak: 0.85;
+}
+.neil-now .nn-music-beat > span:nth-child(3) {
+  --nn-speed: 1.2s;
+  --nn-delay: -0.8s;
+  --nn-peak: 1;
+}
+.neil-now .nn-music-beat > span:nth-child(4) {
+  --nn-speed: 0.95s;
+  --nn-delay: -0.2s;
+  --nn-peak: 0.75;
+}
+.neil-now .nn-music-beat > span:nth-child(5) {
+  --nn-speed: 1.05s;
+  --nn-delay: -0.7s;
+  --nn-peak: 0.95;
+}
+.neil-now .nn-music-beat > span:nth-child(6) {
+  --nn-speed: 0.9s;
+  --nn-delay: -0.4s;
+  --nn-peak: 0.7;
+}
+.neil-now .nn-music-beat > span:nth-child(7) {
+  --nn-speed: 1.15s;
+  --nn-delay: -0.9s;
+  --nn-peak: 0.5;
+}
+
+@keyframes nn-equalizer-dance {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(var(--nn-peak, 1));
+  }
+}
+
+/* 暂停时统一成短条，内部变化平滑复位 */
+.neil-now .nn-music:not(.nn-is-playing) .nn-music-beat > span {
+  opacity: 0.55;
+}
+
+/* 手机稍微细一点 */
+@media (max-width: 600px) {
+  .neil-now .nn-music .nn-music-beat {
+    gap: 4px;
+  }
+
+  .neil-now .nn-music .nn-music-beat > span {
+    flex-basis: 5px;
+    width: 5px;
+    height: 24px;
+  }
+}
+
+/* 系统开启减少动态效果时，展示静态音柱 */
+@media (prefers-reduced-motion: reduce) {
+  .neil-now .nn-music .nn-music-beat > span {
+    transition: none;
+  }
+
+  .neil-now .nn-music .nn-music-beat > span::before {
+    animation: none;
+    transform: scaleY(var(--nn-peak, 0.6));
   }
 }
 </style>
